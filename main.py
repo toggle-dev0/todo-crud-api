@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import Optional
 
-app = FastAPI()
+app = FastAPI(title="Todo CRUD App")
 
 # Returns status code 400 - Bad Request for empty body and invalid path parameters
 @app.exception_handler(RequestValidationError)
